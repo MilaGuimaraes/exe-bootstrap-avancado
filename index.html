@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio bootstrap</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 60px;
+            padding-top: 16px;
+        }
+
+        .container {
+            padding-top: 20px;    
+            max-width: 1024px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        button {
+            width: 100%;
+            padding: 7px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <Header>
+    <h1>Concurso de Fotografia</h1>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div  data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="https://media.istockphoto.com/id/1388524172/es/foto/ni%C3%B1o-asi%C3%A1tico-jugando-en-el-parque.jpg?s=612x612&w=0&k=20&c=swsmDbr2JUvTBs1dkCSKc9h9M7xymOt45eHMpqNruE0=" />
+                    <div class="carousel-caption">
+                        <h2>Foto de Menina</h2>
+                    </div>
+                </div>
+                <div  data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://media.istockphoto.com/id/1447162783/es/foto/barcos-de-pesca-alineados-al-atardecer.jpg?s=612x612&w=0&k=20&c=y6oiu85bBcKN7-lPv9aOykFvOJSRoLuy2_pVZAo3RHI=" />
+                    <div class="carousel-caption">
+                        <h2>Foto de Barcos</h2>
+                    </div>
+                </div>
+                <div  data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://media.istockphoto.com/id/1130247112/es/foto/lago-de-garda-con-altas-monta%C3%B1as-en-d%C3%ADa-de-verano-soleado-italia.jpg?s=612x612&w=0&k=20&c=MJIPSr_XLV2AqJPIcrTGA8Oh3HGkzUkKI8vI-X4vQGQ=" />
+                    <div class="carousel-caption">
+                        <h2>Foto de Arvores</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+    </div>
+    </Header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1 col-md-6 col-xl-4">
+                <div class="card">
+                    <header class="card-header">
+                        <h4>Foto da Menina</h4>
+                    </header>
+                    <img src="https://media.istockphoto.com/id/1388524172/es/foto/ni%C3%B1o-asi%C3%A1tico-jugando-en-el-parque.jpg?s=612x612&w=0&k=20&c=swsmDbr2JUvTBs1dkCSKc9h9M7xymOt45eHMpqNruE0=" />
+                <div class="card-body">
+                    <h4 class="card-title">Clique aqui para votar na Foto da Menina</h4>
+                    <button type="button" class="btn btn-success">Votar</button>                    
+                </div>
+                </div>
+            </div>            
+            <div class="col-sm-1 col-md-6 col-xl-4">
+                <div class="card">
+                    <header class="card-header">
+                        <h4>Foto de Barcos</h4>
+                    </header>
+                    <img src="https://media.istockphoto.com/id/1447162783/es/foto/barcos-de-pesca-alineados-al-atardecer.jpg?s=612x612&w=0&k=20&c=y6oiu85bBcKN7-lPv9aOykFvOJSRoLuy2_pVZAo3RHI=" />
+                <div class="card-body">
+                    <h4 class="card-title">Clique aqui para votar na Foto de Barcos</h4>
+                    <button type="button" class="btn btn-success">Votar</button>                    
+                </div>
+                </div>
+            </div>            
+            <div class="col-sm-1 col-md-6 col-xl-4">
+                <div class="card">
+                    <header class="card-header">
+                        <h4>Foto de Arvores</h4>
+                    </header>
+                    <img src="https://media.istockphoto.com/id/1130247112/es/foto/lago-de-garda-con-altas-monta%C3%B1as-en-d%C3%ADa-de-verano-soleado-italia.jpg?s=612x612&w=0&k=20&c=MJIPSr_XLV2AqJPIcrTGA8Oh3HGkzUkKI8vI-X4vQGQ=" />
+                <div class="card-body">
+                    <h4 class="card-title">Clique aqui para votar na Foto de Arvores</h4>
+                    <button type="button" class="btn btn-success">Votar</button>                    
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
